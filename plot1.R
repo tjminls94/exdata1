@@ -10,10 +10,6 @@ download.file(url,file)
 unzip(file)
 powerdata <-read.csv("household_power_consumption.txt",sep=";")
 
-## change columns 1 and 2 from "factor" to "char"
-
-# change columns 3 to 9 from "factor" to "numeric"
-
 ## convert date from Factor to Date
 
 powerdata$Date <- as.Date(powerdata$Date, format="%d/%m/%Y")
